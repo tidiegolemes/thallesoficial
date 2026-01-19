@@ -1,0 +1,44 @@
+:root {
+    /* --- PALETA DARK (JUVENTUDE EDITION) --- */
+    --bg-body: #050f08;       /* Verde Quase Preto */
+    --bg-card: rgba(20, 40, 30, 0.7); /* Vidro Esverdeado Escuro */
+    
+    /* CORES PRINCIPAIS */
+    --primary: #009c3b;       /* Verde Juventude Oficial */
+    --accent: #ffffff;        /* Branco Puro (Contraste) */
+    --gold: #ffcc00;          /* Dourado para Títulos */
+    
+    --text-main: #ffffff;
+    --text-muted: #a3b8aa;    /* Cinza Esverdeado */
+    --border: 1px solid rgba(255, 255, 255, 0.1);
+    
+    /* Brilho Verde Neon */
+    --glow: 0 0 20px rgba(0, 156, 59, 0.4); 
+    
+    /* Gradiente de Texto (Branco para Verde Claro) */
+    --gradient-text: linear-gradient(to right, #ffffff, #66ff99);
+    
+    --btn-social-bg: rgba(255, 255, 255, 0.05);
+}
+
+/* --- PALETA LIGHT (MODO DIA) --- */
+.light-mode {
+    --bg-body: #f0f7f2;
+    --bg-card: #ffffff;
+    --primary: #007a2e;       /* Verde Mais Escuro para contraste no branco */
+    --accent: #009c3b;
+    --text-main: #1a2e22;     /* Verde Quase Preto */
+    --text-muted: #586b5e;
+    --border: 1px solid rgba(0, 0, 0, 0.05);
+    --glow: 0 4px 20px rgba(0, 156, 59, 0.1);
+    --gradient-text: linear-gradient(to right, #007a2e, #1a2e22);
+    --btn-social-bg: rgba(0, 0, 0, 0.05);
+}
+
+/* --- AJUSTES DE CORES ESPECÍFICOS PARA O TEMA --- */
+/* Barra Branca (Juventude) */
+.white-bar { background: #ffffff; box-shadow: 0 0 15px rgba(255,255,255,0.5); }
+
+/* Resto do CSS (Copiar do arquivo anterior do Lukas, pois a estrutura é a mesma) */
+* { margin: 0; padding: 0; box-sizing: border-box; transition: background 0.4s ease, color 0.3s ease, border-color 0.3s; }
+/* ... (Cole aqui todo o resto do CSS do Lukas do container para baixo) ... */
