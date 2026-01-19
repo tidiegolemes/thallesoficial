@@ -625,15 +625,81 @@ h1 {
     background: linear-gradient(to right, rgba(0, 156, 59, 0.05), transparent);
 }
 
-/* --- FOOTER --- */
+/* --- FOOTER PADRÃO FUTTALENTO --- */
 footer {
     text-align: center;
-    padding: 40px 20px;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    padding: 50px 20px;
+    /* Usa a borda sutil do tema */
+    border-top: 1px solid var(--border);
+    /* Usa a cor de texto suave do tema */
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    /* Fundo ligeiramente mais escuro para fechar a página */
+    background: linear-gradient(to bottom, var(--bg-body), rgba(0,0,0,0.3));
 }
-.agency-link { color: var(--primary); text-decoration: none; }
+
+.footer-content p {
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* Caixa de destaque da Agência */
+.managed-by {
+    display: inline-block;
+    /* Fundo sutil baseado na cor do time */
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    padding: 15px 30px;
+    border-radius: 50px; /* Borda bem redonda e moderna */
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse na caixa da agência */
+.managed-by:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--primary); /* Brilha com a cor do time */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.managed-by p {
+    margin: 0 0 5px 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+/* O Link da FutTalento */
+.agency-link {
+    /* Usa a cor principal do atleta (Verde, Azul, etc.) */
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.3rem;
+    letter-spacing: -0.5px;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse no link */
+.agency-link:hover {
+    /* Fica branco e ganha um brilho da cor do time */
+    color: #ffffff;
+    text-shadow: 0 0 15px var(--primary);
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 480px) {
+    .managed-by {
+        width: 100%;
+        padding: 15px;
+    }
+    .agency-link {
+        font-size: 1.2rem;
+    }
+}
 
 /* --- RESPONSIVO --- */
 @media (min-width: 768px) {
