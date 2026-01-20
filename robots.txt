@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tidiegolemes.github.io/thallesoficial/sitemap.xml
