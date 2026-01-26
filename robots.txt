@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
+# Autoriza IAs
+User-agent: GPTBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://thallessilvino.com.br/sitemap.xml
