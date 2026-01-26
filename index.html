@@ -44,12 +44,12 @@
             "unitCode": "KGM",
             "unitText": "kg"
           },
-          "description": "Lateral e Meia do EC Juventude. Geração 2012. Especialista em transição e apoio, destaque individual em competições nacionais.",
+          "description": "Lateral e Meia do EC Juventude. Geração 2012. Destaque na Copa Sarandi e competições da Liga Serrana.",
           "affiliation": [
             { "@type": "SportsTeam", "name": "Esporte Clube Juventude" },
             { "@type": "SportsTeam", "name": "E.C. São José" }
           ],
-          "knowsAbout": ["Futebol", "Lateral Direita", "Meio-Campo", "Performance Esportiva"],
+          "knowsAbout": ["Futebol", "Lateral Direita", "Meio-Campo", "Scouting"],
           "award": ["Melhor Lateral Copa Sarandi 2024", "Destaque Copa São Ludgero 2025"],
           "sameAs": [
             "https://www.instagram.com/thalles_silvino/",
@@ -74,10 +74,9 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* Estilos do Modal de Galeria */
         #photoModal { display:none; position:fixed; z-index:10000; inset:0; background:rgba(0,0,0,0.9); align-items:center; justify-content:center; padding:20px; cursor:zoom-out; }
-        #modalImg { max-width:100%; max-height:100%; border-radius:10px; box-shadow:0 0 30px var(--primary); border: 2px solid white; }
-        .photo-item { cursor: zoom-in; }
+        #modalImg { max-width:100%; max-height:100%; border-radius:10px; box-shadow:0 0 30px var(--primary); border: 2px solid white; transition: 0.3s; }
+        .clickable-img { cursor: zoom-in; }
     </style>
 </head>
 <body>
@@ -88,26 +87,24 @@
     <header class="hero">
         <div class="container">
             <div class="profile-frame">
-                <img src="perfilthalles.jpg" alt="Thalles Silvino" class="profile-pic">
+                <img src="perfilthalles.jpg" alt="Thalles Silvino" class="profile-pic clickable-img">
                 <span class="verified-badge">✓</span>
             </div>
             <h1>THALLES <span class="highlight">SILVINO</span></h1>
-            <p class="subtitle">Lateral & Meia | <a href="https://www.instagram.com/basedojuventude/" target="_blank" style="color: inherit; text-decoration: underline;">@ecjuventude</a> 🇳🇬</p>
+            <p class="subtitle">Lateral & Meia | <a href="https://www.instagram.com/ecjuventude/" target="_blank" style="color: inherit; text-decoration: underline;">@ecjuventude</a> 🇳🇬</p>
             <p class="bio-text">
                 Atleta de alto rendimento da <strong>Geração 2012</strong>. Referência técnica no 
-                <strong style="color: var(--primary);">Juventude</strong>. Eleito múltiplas vezes o melhor da posição em torneios nacionais.
+                <strong style="color: var(--primary);">Juventude</strong>. Eleito o melhor da posição em torneios nacionais.
             </p>
         </div>
     </header>
 
     <section class="quick-links">
-        <div class="social-top-bar">
-            <div class="container social-flex">
-                <a href="https://www.youtube.com/@ThallesSilvino" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/thalles_silvino/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@thallessilvinooficial" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
-                <a href="https://wa.me/554832200260" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
-            </div>
+        <div class="container social-flex">
+            <a href="https://www.youtube.com/@ThallesSilvino" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/thalles_silvino/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@thallessilvinooficial" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/554832200260" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
         </div>
     </section>
 
@@ -116,43 +113,29 @@
             <h2>FICHA TÉCNICA <span class="highlight">2026</span></h2>
             <div class="ficha-container">
                 <div class="athlete-image-feature">
-                    <img src="thalles-action.png" alt="Thalles em ação" class="action-shot">
+                    <img src="thalles-action.png" alt="Thalles Silvino em ação" class="action-shot clickable-img">
                 </div>
-
                 <div class="athlete-data-structure">
                     <div class="data-block blue-accent">
                         <div class="data-group">
                             <span class="data-icon"><i class="fas fa-shield-alt"></i></span>
-                            <div>
-                                <span class="data-label">Clube Atual</span>
-                                <span class="data-value">E.C. Juventude</span>
-                            </div>
+                            <div><span class="data-label">Clube Atual</span><span class="data-value">E.C. Juventude</span></div>
                         </div>
                         <div class="data-divider"></div>
                         <div class="data-group">
                             <span class="data-icon"><i class="fas fa-map-marker-alt"></i></span>
-                            <div>
-                                <span class="data-label">Naturalidade</span>
-                                <span class="data-value">Porto Alegre - RS</span>
-                            </div>
+                            <div><span class="data-label">Naturalidade</span><span class="data-value">Porto Alegre - RS</span></div>
                         </div>
                     </div>
-
                     <div class="data-block cyan-accent">
                          <div class="data-group">
                             <span class="data-icon"><i class="fas fa-arrows-alt-v"></i></span>
-                            <div>
-                                <span class="data-label">Altura / Peso</span>
-                                <span class="data-value">1.62m / 42kg</span>
-                            </div>
+                            <div><span class="data-label">Altura / Peso</span><span class="data-value">1.62m / 42kg</span></div>
                         </div>
                         <div class="data-divider"></div>
                         <div class="data-group">
                             <span class="data-icon"><i class="fas fa-shoe-prints"></i></span>
-                            <div>
-                                <span class="data-label">Posição / Pé</span>
-                                <span class="data-value highlight-neon">Lateral e Meia / Destro</span>
-                            </div>
+                            <div><span class="data-label">Posição / Pé</span><span class="data-value highlight-neon">Lateral e Meia / Destro</span></div>
                         </div>
                     </div>
                 </div>
@@ -163,27 +146,18 @@
     <section class="messi-stats-section">
         <div class="stats-overlay"></div>
         <div class="stats-bg-image" style="background-image: url('thalles-fundo-stats.png');"></div>
-        
         <div class="container" style="position: relative; z-index: 2;">
-            <div class="messi-header">
-                <h2>DESTAQUE <span class="highlight">INDIVIDUAL</span></h2>
-            </div>
+            <div class="messi-header"><h2>DESTAQUE <span class="highlight">INDIVIDUAL</span></h2></div>
             <div class="stat-row">
                 <div class="stat-info">
-                    <h3>MELHOR DA POSIÇÃO & SELEÇÃO DA COPA <a href="https://www.instagram.com/copasarandi/" target="_blank" style="color: #fff; text-decoration: underline;">@Sarandi</a> (2024)</h3>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar green-bar" style="width: 100%;"></div>
-                        <span class="bar-value">ELITE</span>
-                    </div>
+                    <h3>MELHOR DA POSIÇÃO & SELEÇÃO DA COPA <a href="https://www.instagram.com/ipirangasarandi/" target="_blank" style="color: #fff; text-decoration: underline;">@Sarandi</a> (2024)</h3>
+                    <div class="progress-bar-container"><div class="progress-bar green-bar" style="width: 100%;"></div><span class="bar-value">ELITE</span></div>
                 </div>
             </div>
             <div class="stat-row">
                 <div class="stat-info">
                     <h3>DESTAQUE DA POSIÇÃO COPA <a href="https://www.instagram.com/copasaolidgero/" target="_blank" style="color: #fff; text-decoration: underline;">@Sãoludgero</a> (2025)</h3>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar green-bar" style="width: 100%;"></div>
-                        <span class="bar-value">ELITE</span>
-                    </div>
+                    <div class="progress-bar-container"><div class="progress-bar green-bar" style="width: 100%;"></div><span class="bar-value">ELITE</span></div>
                 </div>
             </div>
         </div>
@@ -192,7 +166,7 @@
     <section class="trophies-dynamic-section">
         <div class="container trophies-container">
             <div class="trophy-hero-image">
-                <img src="thalles-trofeu1.jpg" alt="Thalles Campeão" class="hero-img-effect">
+                <img src="thalles-trofeu1.jpg" alt="Thalles Campeão" class="hero-img-effect clickable-img">
             </div>
             <div class="trophy-carousel-wrapper">
                 <div class="section-title-wrapper">
@@ -205,31 +179,31 @@
                         <div class="card-body">
                             <span class="status-badge gold">CAMPEÃO</span>
                             <h3>Copa <a href="https://www.instagram.com/copaencantado/" target="_blank">@Encantado</a> / <a href="https://www.instagram.com/safergs/" target="_blank">@Safergs</a></h3>
-                            <div class="match-details">
-                                <span class="team-name">Juventude</span><br>
-                                <span class="status-badge red" style="margin-top:5px;">VICE @BGPRIME</span>
-                            </div>
+                            <div class="match-details"><span class="team-name">Juventude</span><br><span class="status-badge red" style="margin-top:5px;">VICE @BGPRIME</span></div>
                         </div>
                     </div>
                     <div class="messi-card">
                         <div class="card-header-date"><span class="month">2024</span></div>
                         <div class="card-body">
                             <span class="status-badge gold">CAMPEÃO</span>
-                            <h3>Copa <a href="https://www.instagram.com/copasarandi/" target="_blank">@Sarandi</a></h3>
-                            <div class="match-details">
-                                <span class="team-name">Juventude</span><br>
-                                <span class="status-badge red" style="margin-top:5px;">VICE @NOLIGAFI</span>
-                            </div>
+                            <h3>Copa <a href="https://www.instagram.com/ipirangasarandi/" target="_blank">@Sarandi</a></h3>
+                            <div class="match-details"><span class="team-name">Juventude</span><br><span class="status-badge red" style="margin-top:5px;">VICE @NOLIGAFI</span></div>
                         </div>
                     </div>
                     <div class="messi-card">
                         <div class="card-header-date"><span class="month">2023</span></div>
                         <div class="card-body">
                             <span class="status-badge gold">TRÍPLICE COROA</span>
-                            <h3><a href="https://www.instagram.com/ligaserranafb/" target="_blank">@Ligaserrana</a> / <a href="https://www.instagram.com/condacup/" target="_blank">@Condacup</a></h3>
-                            <div class="match-details">
-                                <span class="team-name">Juventude</span>
-                            </div>
+                            <h3><a href="https://www.instagram.com/ligadenovaserrana/" target="_blank">@Ligaserrana</a> / <a href="https://www.instagram.com/condacup/" target="_blank">@Condacup</a></h3>
+                            <div class="match-details"><span class="team-name">Juventude</span></div>
+                        </div>
+                    </div>
+                    <div class="messi-card">
+                        <div class="card-header-date"><span class="month">2022</span></div>
+                        <div class="card-body">
+                            <span class="status-badge gold">BICAMPEÃO</span>
+                            <h3><a href="https://www.instagram.com/ligaserranadefuteboldecampo/" target="_blank">@Ligaserrana</a> / <a href="https://www.instagram.com/encostadaserra/" target="_blank">@Encosta</a></h3>
+                            <div class="match-details"><span class="team-name">São José</span></div>
                         </div>
                     </div>
                 </div>
@@ -238,6 +212,7 @@
     </section>
 
     <section class="rocket-journey-section">
+        <div class="journey-bg" style="background-image: url('thalles-action1.jpg');"></div>
         <div class="container" style="position: relative; z-index: 2;">
             <div class="section-title-wrapper" style="text-align: center; margin-bottom: 50px;">
                 <h2>TRAJETÓRIA <span class="highlight">PROFISSIONAL</span> 🚀</h2>
@@ -248,7 +223,7 @@
                     <div class="journey-content highlight-content">
                         <span class="journey-year">2023 - ATUAL</span>
                         <h3><a href="https://www.instagram.com/ecjuventude/" target="_blank" style="color:#fff; text-decoration: underline;">E.C. Juventude ↗</a></h3>
-                        <p>Destaque Jaconero com convocações para seleções de campeonato e títulos oficiais.</p>
+                        <p>Consolidado na base do Jaconero com títulos oficiais e destaque técnico.</p>
                     </div>
                 </div>
                 <div class="journey-item">
@@ -256,15 +231,7 @@
                     <div class="journey-content">
                         <span class="journey-year">2020 - 2022</span>
                         <h3><a href="https://www.instagram.com/saojosefutebol/" target="_blank" style="color:#fff; text-decoration: underline;">E.C. São José ↗</a></h3>
-                        <p>Bicampeão LIFESA e Encosta da Serra. Vice-campeão da prestigiosa <a href="https://www.instagram.com/bgprime/" target="_blank" style="color:var(--primary);">@bgprime</a>.</p>
-                    </div>
-                </div>
-                <div class="journey-item">
-                    <div class="journey-marker"><i class="fas fa-futbol"></i></div>
-                    <div class="journey-content">
-                        <span class="journey-year">INÍCIO</span>
-                        <h3><a href="https://www.instagram.com/futebolclubebonanza/" target="_blank" style="color:#fff; text-decoration: underline;">F.C. Bonanza ↗</a></h3>
-                        <p>Formação de base no futsal, sagrando-se Campeão Municipal em Viamão.</p>
+                        <p>Bicampeão LIFESA e Encosta da Serra. Vice <a href="https://www.instagram.com/bgprime/" target="_blank">@bgprime</a>.</p>
                     </div>
                 </div>
             </div>
@@ -278,15 +245,15 @@
                 <p>Clique para ampliar a análise técnica</p>
             </div>
             <div class="gallery-grid">
-                <div class="photo-item large" style="background-image: url('galeria11.jpg');"></div>
-                <div class="photo-item" style="background-image: url('galeria5.jpg');"></div>
-                <div class="photo-item" style="background-image: url('galeria14.jpg');"></div>
-                <div class="photo-item" style="background-image: url('galeria4.jpg');"></div>
-                <div class="photo-item" style="background-image: url('galeria15.jpg');"></div>
-                <div class="photo-item" style="background-image: url('galeria16.jpg');"></div>
-                <div class="photo-item" style="background-image: url('galeria17.jpg');"></div>
-                <div class="photo-item" style="background-image: url('galeria18.jpg');"></div>
-                <div class="photo-item" style="background-image: url('galeria19.jpg');"></div>
+                <div class="photo-item large clickable-img" style="background-image: url('galeria11.jpg');"></div>
+                <div class="photo-item clickable-img" style="background-image: url('galeria5.jpg');"></div>
+                <div class="photo-item clickable-img" style="background-image: url('galeria14.jpg');"></div>
+                <div class="photo-item clickable-img" style="background-image: url('galeria4.jpg');"></div>
+                <div class="photo-item clickable-img" style="background-image: url('galeria15.jpg');"></div>
+                <div class="photo-item clickable-img" style="background-image: url('galeria16.jpg');"></div>
+                <div class="photo-item clickable-img" style="background-image: url('galeria17.jpg');"></div>
+                <div class="photo-item clickable-img" style="background-image: url('galeria18.jpg');"></div>
+                <div class="photo-item clickable-img" style="background-image: url('galeria19.jpg');"></div>
             </div>
         </div>
     </section>
@@ -307,13 +274,21 @@
     </div>
 
     <script>
-        // Lógica da Galeria
-        document.querySelectorAll('.photo-item').forEach(item => {
-            item.addEventListener('click', function() {
-                const bg = this.style.backgroundImage;
-                const url = bg.replace('url("', '').replace('")', '');
-                document.getElementById('modalImg').src = url;
-                document.getElementById('photoModal').style.display = 'flex';
+        // Lógica da Galeria Corrigida
+        document.querySelectorAll('.clickable-img').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.stopPropagation();
+                let url = "";
+                if (this.tagName === 'IMG') {
+                    url = this.src;
+                } else {
+                    const bg = window.getComputedStyle(this).backgroundImage;
+                    url = bg.replace(/url\(['"]?(.*?)['"]?\)/i, '$1');
+                }
+                if(url && url !== "none") {
+                    document.getElementById('modalImg').src = url;
+                    document.getElementById('photoModal').style.display = 'flex';
+                }
             });
         });
 
