@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://thallessilvino.com.br/</loc>
-    <lastmod>2026-01-26</lastmod>
-    <priority>1.00</priority>
+    <lastmod>2024-07-24</lastmod> <!-- Coloque a data da última modificação -->
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <video:video>
+      <video:thumbnail_loc>https://thallessilvino.com.br/thalles-action.png</video:thumbnail_loc> <!-- URL de uma boa imagem de capa -->
+      <video:title>Thalles Silvino | Melhores Momentos (Highlights 2024/2025)</video:title>
+      <video:description>Assista aos melhores lances, dribles e jogadas de Thalles Silvino, lateral e meia do EC Juventude. Análise de desempenho da geração 2012.</video:description>
+      <video:player_loc>https://player.vimeo.com/video/1145666145?h=d08c780d71</video:player_loc>
+      <video:duration>125</video:duration> <!-- IMPORTANTE: Coloque a duração do vídeo em segundos -->
+      <video:publication_date>2024-07-24T08:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
 </urlset>
