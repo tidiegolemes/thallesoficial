@@ -62,6 +62,17 @@
           "url": "https://thallessilvino.com.br",
           "name": "Thalles Silvino Oficial",
           "publisher": { "@id": "https://thallessilvino.com.br/#athlete" }
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Thalles Silvino | Highlights 2024/2025",
+          "description": "Compilado com os melhores lances, dribles e jogadas de Thalles Silvino atuando pelo EC Juventude.",
+          "thumbnailUrl": "https://thallessilvino.com.br/thalles-action.png",
+          "uploadDate": "2024-07-24",
+          "contentUrl": "https://vimeo.com/1145666145/d08c780d71",
+          "embedUrl": "https://player.vimeo.com/video/1145666145?h=d08c780d71",
+          "publisher": { "@id": "https://thallessilvino.com.br/#athlete" },
+          "author": { "@id": "https://thallessilvino.com.br/#athlete" }
         }
       ]
     }
@@ -77,6 +88,8 @@
         #photoModal { display:none; position:fixed; z-index:10000; inset:0; background:rgba(0,0,0,0.9); align-items:center; justify-content:center; padding:20px; cursor:zoom-out; }
         #modalImg { max-width:100%; max-height:100%; border-radius:10px; box-shadow:0 0 30px var(--primary); border: 2px solid white; transition: 0.3s; }
         .clickable-img { cursor: zoom-in; }
+        .video-container { position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0; overflow: hidden; max-width: 100%; background: #000; margin: 20px auto; border-radius: 10px; box-shadow: 0 0 20px rgba(0,255,255,0.3); }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
     </style>
 </head>
 <body>
@@ -142,6 +155,20 @@
             </div>
         </div>
     </section>
+
+    <!-- INÍCIO DA SEÇÃO DO VÍDEO ADICIONADA -->
+    <section class="video-highlights" style="padding: 50px 0;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h2>HIGHLIGHTS EM <span class="highlight">VÍDEO</span> 🎥</h2>
+                <p>Análise de desempenho em lances capitais.</p>
+            </div>
+            <div class="video-container">
+                <iframe src="https://player.vimeo.com/video/1145666145?h=d08c780d71&color=00ffc3&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- FIM DA SEÇÃO DO VÍDEO -->
 
     <section class="messi-stats-section">
         <div class="stats-overlay"></div>
