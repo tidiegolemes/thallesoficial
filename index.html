@@ -26,69 +26,78 @@
     <!-- DADOS ESTRUTURADOS DE ALTA AUTORIDADE (AEO SCOUTING) -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://thallessilvino.com.br/#athlete",
+      "name": "Thalles Silvino Silveira",
+      "jobTitle": "Atleta de Futebol em Formação",
+      "birthDate": "2012-12-18",
+      "gender": "Male",
+      "height": {
+        "@type": "QuantitativeValue",
+        "value": 162,
+        "unitCode": "CMT",
+        "unitText": "cm"
+      },
+      "weight": {
+        "@type": "QuantitativeValue",
+        "value": 42,
+        "unitCode": "KGM",
+        "unitText": "kg"
+      },
+      "description": "Lateral e Meia do EC Juventude. Geração 2012. Destaque na Copa Sarandi e competições da Liga Serrana.",
+      "affiliation": [
         {
-          "@type": "Person",
-          "@id": "https://thallessilvino.com.br/#athlete",
-          "name": "Thalles Silvino Silveira",
-          "jobTitle": "Atleta de Futebol em Formação",
-          "birthDate": "2012-12-18",
-          "gender": "Male",
-          "height": {
-            "@type": "QuantitativeValue",
-            "value": 162,
-            "unitCode": "CMT",
-            "unitText": "cm"
-          },
-          "weight": {
-            "@type": "QuantitativeValue",
-            "value": 42,
-            "unitCode": "KGM",
-            "unitText": "kg"
-          },
-          "description": "Lateral e Meia do EC Juventude. Geração 2012. Destaque na Copa Sarandi e competições da Liga Serrana.",
-          "affiliation": [
-            { "@type": "SportsTeam", "name": "Esporte Clube Juventude" },
-            { "@type": "SportsTeam", "name": "E.C. São José" }
-          ],
-          "knowsAbout": ["Futebol", "Lateral Direita", "Meio-Campo", "Scouting"],
-          "award": ["Melhor Lateral Copa Sarandi 2024", "Destaque Copa São Ludgero 2025"],
-          "sameAs": [
-            "https://www.instagram.com/thalles_silvino/",
-            "https://www.tiktok.com/@thalles_silvino"
-          ]
+          "@type": "SportsTeam",
+          "name": "Esporte Clube Juventude"
         },
         {
-          "@type": "WebSite",
-          "@id": "https://thallessilvino.com.br/#website",
-          "url": "https://thallessilvino.com.br",
-          "name": "Thalles Silvino Oficial",
-          "publisher": { "@id": "https://thallessilvino.com.br/#athlete" }
-        },
-        {
-          "@type": "VideoObject",
-          "name": "Thalles Silvino | Skills 2026 | EC Juventude",
-          "description": "Vídeo de habilidades e lances da temporada 2026 de Thalles Silvino, atleta do EC Juventude.",
-          "thumbnailUrl": "https://thallessilvino.com.br/temporada-2026-01.jpg",
-          "contentUrl": "https://vimeo.com/1227576310/c0b0a32f14",
-          "embedUrl": "https://player.vimeo.com/video/1227576310?h=c0b0a32f14",
-          "publisher": { "@id": "https://thallessilvino.com.br/#athlete" },
-          "author": { "@id": "https://thallessilvino.com.br/#athlete" }
-        },
-        {
-          "@type": "VideoObject",
-          "name": "Thalles Silvino | Highlights 2024/2025",
-          "description": "Compilado com os melhores lances, dribles e jogadas de Thalles Silvino atuando pelo EC Juventude.",
-          "thumbnailUrl": "https://thallessilvino.com.br/thalles-silvino-2026.jpeg",
-          "uploadDate": "2024-07-24",
-          "contentUrl": "https://vimeo.com/1145666145/d08c780d71",
-          "embedUrl": "https://player.vimeo.com/video/1145666145?h=d08c780d71",
-          "publisher": { "@id": "https://thallessilvino.com.br/#athlete" },
-          "author": { "@id": "https://thallessilvino.com.br/#athlete" }
+          "@type": "SportsTeam",
+          "name": "E.C. São José"
         }
+      ],
+      "knowsAbout": [
+        "Futebol",
+        "Lateral Direita",
+        "Meio-Campo",
+        "Scouting"
+      ],
+      "award": [
+        "Melhor Lateral Copa Sarandi 2024",
+        "Destaque Copa São Ludgero 2025"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/thalles_silvino/",
+        "https://www.tiktok.com/@thalles_silvino"
       ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://thallessilvino.com.br/#website",
+      "url": "https://thallessilvino.com.br",
+      "name": "Thalles Silvino Oficial",
+      "publisher": {
+        "@id": "https://thallessilvino.com.br/#athlete"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Thalles Silvino | Skills 2026 | EC Juventude",
+      "description": "Vídeo de habilidades e lances da temporada 2026 de Thalles Silvino, atleta do EC Juventude.",
+      "thumbnailUrl": "https://thallessilvino.com.br/temporada-2026-01.jpg",
+      "contentUrl": "https://vimeo.com/1227576310/c0b0a32f14",
+      "embedUrl": "https://player.vimeo.com/video/1227576310?h=c0b0a32f14",
+      "publisher": {
+        "@id": "https://thallessilvino.com.br/#athlete"
+      },
+      "author": {
+        "@id": "https://thallessilvino.com.br/#athlete"
+      }
     }
+  ]
+}
     </script>
 
     <link rel="stylesheet" href="style.min.css?v=2.0.0">
@@ -174,13 +183,7 @@
             <div class="video-container">
                 <iframe src="https://player.vimeo.com/video/1227576310?h=c0b0a32f14&amp;title=0&amp;byline=0&amp;portrait=0" title="Thalles Silvino — Skills e lances da temporada 2026" width="640" height="360" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div style="text-align:center; margin-top: 42px; margin-bottom:16px;">
-                <h3 style="font-size: 1.3rem;">HIGHLIGHTS <span class="highlight">2024/2025</span></h3>
-                <p>Reveja também o compilado das temporadas anteriores.</p>
-            </div>
-            <div class="video-container">
-                <iframe src="https://player.vimeo.com/video/1145666145?h=d08c780d71&amp;title=0&amp;byline=0&amp;portrait=0" title="Thalles Silvino — Highlights 2024 e 2025" width="640" height="360" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            
         </div>
     </section>
     <!-- FIM DA SEÇÃO DO VÍDEO -->
@@ -290,14 +293,11 @@
             <div class="gallery-grid">
                 <div class="photo-item large clickable-img lazy-bg" data-bg="temporada-2026-01.jpg" role="img" aria-label="Thalles Silvino com a camisa 8 do Juventude na temporada 2026"></div>
                 <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-02.jpg" role="img" aria-label="Thalles Silvino em campo com o uniforme do EC Juventude na temporada 2026"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-03.jpg" role="img" aria-label="Thalles Silvino de costas, camisa 8 do Juventude"></div>
                 <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-04.jpg" role="img" aria-label="Thalles Silvino em dois momentos de jogo pelo Juventude"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-05.jpg" role="img" aria-label="Thalles Silvino durante partida da temporada 2026"></div>
                 <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-06.jpg" role="img" aria-label="Thalles Silvino, capitão, em campo na temporada 2026"></div>
                 <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-07.jpg" role="img" aria-label="Registro de pré-jogo com Thalles Silvino e arbitragem"></div>
                 <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-08.jpg" role="img" aria-label="Thalles Silvino com a equipe de arbitragem e capitães antes da partida"></div>
                 <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-09.jpg" role="img" aria-label="Thalles Silvino em treinamento com o Juventude"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-10.jpg" role="img" aria-label="Registro de partida da temporada 2026 envolvendo o EC Juventude"></div>
                 <div class="photo-item large clickable-img lazy-bg" data-bg="galeria11.jpg" role="img" aria-label="Registro de Thalles Silvino em campo"></div>
                 <div class="photo-item clickable-img lazy-bg" data-bg="galeria5.jpg" role="img" aria-label="Registro de Thalles Silvino em campo"></div>
                 <div class="photo-item clickable-img lazy-bg" data-bg="galeria14.jpg" role="img" aria-label="Registro de Thalles Silvino em campo"></div>
