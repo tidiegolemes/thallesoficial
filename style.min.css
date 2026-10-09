@@ -108,3 +108,15 @@ footer {background:#eaf3ec;color:var(--text-muted);padding:38px 20px;}
  html {scroll-behavior:auto;}
  *,*::before,*::after {animation-duration:.01ms!important;transition-duration:.01ms!important;}
 }
+
+
+/* Poster acessível e leve — inicializa o player Vimeo apenas por interação */
+.video-launch{display:block;position:absolute;inset:0;width:100%;height:100%;padding:0;margin:0;border:0;background:#1c5131;cursor:pointer;overflow:hidden;color:white;text-align:left;}
+.video-launch>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 27%;filter:brightness(.60) saturate(.9);}
+.video-launch::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,25,10,.8),transparent 75%);pointer-events:none;}
+.video-cover-title{position:absolute;z-index:1;left:clamp(12px,5vw,40px);top:clamp(14px,5vw,40px);font-weight:900;font-size:clamp(1.25rem,5vw,2.45rem);letter-spacing:.01em;line-height:1.05;text-shadow:0 2px 5px rgba(0,0,0,.35);}
+.video-cover-title small{display:block;margin-top:7px;font-size:.55em;color:#86f4ae;letter-spacing:.12em;}
+.video-cover-play{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:clamp(54px,13vw,82px);height:clamp(54px,13vw,82px);border-radius:50%;background:rgba(255,255,255,.96);color:#075f2d;font-size:clamp(22px,6vw,31px);box-shadow:0 5px 28px rgba(0,0,0,.25);padding-left:4px;}
+.video-cover-cta{position:absolute;z-index:1;bottom:clamp(12px,4vw,24px);left:clamp(12px,5vw,40px);font-size:clamp(.72rem,2.8vw,.98rem);font-weight:750;letter-spacing:.055em;}
+.video-launch:focus-visible{outline:4px solid #3bde88;outline-offset:-6px;}
+.video-fallback{font-size:.88rem;margin:12px auto 0!important;}
