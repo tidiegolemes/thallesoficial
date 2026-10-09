@@ -120,3 +120,12 @@ footer {background:#eaf3ec;color:var(--text-muted);padding:38px 20px;}
 .video-cover-cta{position:absolute;z-index:1;bottom:clamp(12px,4vw,24px);left:clamp(12px,5vw,40px);font-size:clamp(.72rem,2.8vw,.98rem);font-weight:750;letter-spacing:.055em;}
 .video-launch:focus-visible{outline:4px solid #3bde88;outline-offset:-6px;}
 .video-fallback{font-size:.88rem;margin:12px auto 0!important;}
+
+
+/* Acessibilidade e foco no teclado */
+.skip-link{position:absolute;left:12px;top:-100px;z-index:11000;background:#075f2d;color:white;border-radius:8px;padding:14px 18px;font-size:1rem;font-weight:800;text-decoration:none;}
+.skip-link:focus{top:12px;}
+.verified-badge{background:#126491;}
+.data-label{font-size:.8rem;}
+.photo-gallery-section img:focus-visible,.action-shot:focus-visible,.profile-pic:focus-visible,.hero-img-effect:focus-visible{outline:3px solid #006d2b;outline-offset:5px;border-radius:8px;}
+@media(max-width:700px){.subtitle{max-width:32ch;margin-inline:auto;margin-bottom:16px;}}
