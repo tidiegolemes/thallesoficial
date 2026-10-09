@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#070b10">
-    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#f5f8f4">
+    <meta name="color-scheme" content="light">
     <link rel="canonical" href="https://thallessilvino.com.br/" />
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preload" as="image" href="perfilthalles.jpg" fetchpriority="high">
     <link rel="alternate" type="text/plain" href="llms.txt" title="Resumo oficial para agentes de IA">
 
     <!-- SEO & AEO Meta Tags -->
@@ -100,19 +101,21 @@
 }
     </script>
 
-    <link rel="stylesheet" href="style.min.css?v=2.0.0">
+    <link rel="stylesheet" href="style.min.css?v=3.0.0">
 
     <style>
-        #photoModal { display:none; position:fixed; z-index:10000; inset:0; background:rgba(0,0,0,0.9); align-items:center; justify-content:center; padding:20px; cursor:zoom-out; }
-        #modalImg { max-width:100%; max-height:100%; border-radius:10px; box-shadow:0 0 30px var(--primary); border: 2px solid white; transition: 0.3s; }
+        #photoModal { display:none; position:fixed; z-index:10000; inset:0; background:rgba(9,24,15,0.94); align-items:center; justify-content:center; padding:22px; cursor:zoom-out; }
+        #photoModal[aria-hidden="false"] { display:flex; }
+        #closePhoto { position:absolute; right:clamp(14px,4vw,36px); top:clamp(12px,4vw,30px); border:1px solid #dbe9dc; border-radius:50%; background:white; color:#0b4c25; font:700 24px/1 system-ui; width:48px; height:48px; cursor:pointer; z-index:2; }
+        #closePhoto:focus-visible { outline:3px solid #61d695; outline-offset:4px; }
+        #modalImg { max-width:100%; max-height:calc(100dvh - 90px); object-fit:contain; border-radius:10px; border:2px solid white; }
         .clickable-img { cursor: zoom-in; }
-        .video-container { position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0; overflow: hidden; max-width: 100%; background: #000; margin: 20px auto; border-radius: 10px; box-shadow: 0 0 20px rgba(0,255,255,0.3); }
+        .video-container { position: relative; aspect-ratio:16/9; height:auto; overflow:hidden; width:100%; max-width:900px; background:#14271d; margin:20px auto; border-radius:16px; box-shadow:0 8px 28px rgba(0,67,25,0.12); }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
     </style>
 </head>
 <body>
 
-    <button class="theme-switch" id="themeToggle" title="Mudar Tema">🌙</button>
 
     <header class="hero">
         <div class="container">
@@ -291,22 +294,22 @@
             </div>
             <div style="text-align:center; margin: 0 auto 18px;"><h3 style="font-size: 1.25rem;">TEMPORADA <span class="highlight">2026</span> • EC JUVENTUDE</h3><p>Novos registros de jogos, concentração e atividades em campo.</p></div>
             <div class="gallery-grid">
-                <div class="photo-item large clickable-img lazy-bg" data-bg="temporada-2026-01.jpg" role="img" aria-label="Thalles Silvino com a camisa 8 do Juventude na temporada 2026"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-02.jpg" role="img" aria-label="Thalles Silvino em campo com o uniforme do EC Juventude na temporada 2026"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-04.jpg" role="img" aria-label="Thalles Silvino em dois momentos de jogo pelo Juventude"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-06.jpg" role="img" aria-label="Thalles Silvino, capitão, em campo na temporada 2026"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-07.jpg" role="img" aria-label="Registro de pré-jogo com Thalles Silvino e arbitragem"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-08.jpg" role="img" aria-label="Thalles Silvino com a equipe de arbitragem e capitães antes da partida"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="temporada-2026-09.jpg" role="img" aria-label="Thalles Silvino em treinamento com o Juventude"></div>
-                <div class="photo-item large clickable-img lazy-bg" data-bg="galeria11.jpg" role="img" aria-label="Registro de Thalles Silvino em campo"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="galeria5.jpg" role="img" aria-label="Registro de Thalles Silvino em campo"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="galeria14.jpg" role="img" aria-label="Registro de Thalles Silvino em campo"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="galeria4.jpg" role="img" aria-label="Registro de Thalles Silvino em campo"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="galeria15.jpg" role="img" aria-label="Registro de Thalles Silvino em campo"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="galeria16.jpg" role="img" aria-label="Registro de Thalles Silvino em campo"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="galeria17.jpg" role="img" aria-label="Registro de Thalles Silvino em campo"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="galeria18.jpg" role="img" aria-label="Registro de Thalles Silvino em campo"></div>
-                <div class="photo-item clickable-img lazy-bg" data-bg="thalles-temp-2026-juventude.jpeg" role="img" aria-label="Registro de Thalles Silvino em campo"></div>
+                <button class="photo-item large clickable-img" type="button" aria-label="Ampliar: Thalles Silvino com a camisa 8 do Juventude na temporada 2026"><img src="temporada-2026-01.jpg" alt="Thalles Silvino com a camisa 8 do Juventude na temporada 2026" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Thalles Silvino em campo com o uniforme do EC Juventude na temporada 2026"><img src="temporada-2026-02.jpg" alt="Thalles Silvino em campo com o uniforme do EC Juventude na temporada 2026" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Thalles Silvino em dois momentos de jogo pelo Juventude"><img src="temporada-2026-04.jpg" alt="Thalles Silvino em dois momentos de jogo pelo Juventude" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Thalles Silvino, capitão, em campo na temporada 2026"><img src="temporada-2026-06.jpg" alt="Thalles Silvino, capitão, em campo na temporada 2026" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Registro de pré-jogo com Thalles Silvino e arbitragem"><img src="temporada-2026-07.jpg" alt="Registro de pré-jogo com Thalles Silvino e arbitragem" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Thalles Silvino com a equipe de arbitragem e capitães antes da partida"><img src="temporada-2026-08.jpg" alt="Thalles Silvino com a equipe de arbitragem e capitães antes da partida" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Thalles Silvino em treinamento com o Juventude"><img src="temporada-2026-09.jpg" alt="Thalles Silvino em treinamento com o Juventude" loading="lazy" decoding="async"></button>
+                <button class="photo-item large clickable-img" type="button" aria-label="Ampliar: Registro de Thalles Silvino em campo"><img src="galeria11.jpg" alt="Registro de Thalles Silvino em campo" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Registro de Thalles Silvino em campo"><img src="galeria5.jpg" alt="Registro de Thalles Silvino em campo" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Registro de Thalles Silvino em campo"><img src="galeria14.jpg" alt="Registro de Thalles Silvino em campo" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Registro de Thalles Silvino em campo"><img src="galeria4.jpg" alt="Registro de Thalles Silvino em campo" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Registro de Thalles Silvino em campo"><img src="galeria15.jpg" alt="Registro de Thalles Silvino em campo" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Registro de Thalles Silvino em campo"><img src="galeria16.jpg" alt="Registro de Thalles Silvino em campo" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Registro de Thalles Silvino em campo"><img src="galeria17.jpg" alt="Registro de Thalles Silvino em campo" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Registro de Thalles Silvino em campo"><img src="galeria18.jpg" alt="Registro de Thalles Silvino em campo" loading="lazy" decoding="async"></button>
+                <button class="photo-item clickable-img" type="button" aria-label="Ampliar: Registro de Thalles Silvino em campo"><img src="thalles-temp-2026-juventude.jpeg" alt="Registro de Thalles Silvino em campo" loading="lazy" decoding="async"></button>
             </div>
         </div>
     </section>
@@ -322,8 +325,9 @@
     </footer>
 
     <!-- Modal para Galeria -->
-    <div id="photoModal" onclick="this.style.display='none'">
-        <img id="modalImg" alt="Ampliação Técnica">
+    <div id="photoModal" role="dialog" aria-label="Fotografia ampliada" aria-modal="true" aria-hidden="true">
+        <button id="closePhoto" type="button" aria-label="Fechar foto ampliada">×</button>
+        <img id="modalImg" alt="Fotografia ampliada de Thalles Silvino">
     </div>
 
     <script>
@@ -355,29 +359,38 @@
             } else { loadBg(); }
         });
 
-        // Lógica da Galeria Corrigida
+        // Galeria acessível: imagens nativas, ampliação, fechar e tecla Escape.
+        const photoModal = document.getElementById('photoModal');
+        const modalImg = document.getElementById('modalImg');
+        const closePhoto = document.getElementById('closePhoto');
+        let previousFocus = null;
+        function closeGallery() {
+            photoModal.style.display = 'none';
+            photoModal.setAttribute('aria-hidden','true');
+            modalImg.removeAttribute('src');
+            if (previousFocus && typeof previousFocus.focus === 'function') previousFocus.focus();
+        }
         document.querySelectorAll('.clickable-img').forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.stopPropagation();
-                let url = "";
-                if (this.tagName === 'IMG') {
-                    url = this.src;
-                } else {
-                    const bg = window.getComputedStyle(this).backgroundImage;
-                    url = bg.replace(/url\(['"]?(.*?)['"]?\)/i, '$1');
-                }
-                if(url && url !== "none") {
-                    document.getElementById('modalImg').src = url;
-                    document.getElementById('photoModal').style.display = 'flex';
-                }
+            item.addEventListener('click', () => {
+                const source = item.tagName === 'IMG' ? item.currentSrc : item.querySelector('img')?.currentSrc;
+                if (!source) return;
+                previousFocus = document.activeElement;
+                modalImg.src = source;
+                modalImg.alt = item.getAttribute('aria-label') || item.getAttribute('alt') || 'Foto ampliada';
+                photoModal.style.display = 'flex';
+                photoModal.setAttribute('aria-hidden','false');
+                closePhoto.focus();
             });
         });
-
-        const toggleBtn = document.getElementById('themeToggle');
-        toggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('light-mode');
-            toggleBtn.innerHTML = document.body.classList.contains('light-mode') ? '☀️' : '🌙';
+        closePhoto.addEventListener('click', closeGallery);
+        photoModal.addEventListener('click', event => { if (event.target === photoModal) closeGallery(); });
+        document.addEventListener('keydown', event => {
+            if (photoModal.getAttribute('aria-hidden') === 'false') {
+                if (event.key === 'Escape') closeGallery();
+                if (event.key === 'Tab') { event.preventDefault(); closePhoto.focus(); }
+            }
         });
+
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 </body>
